@@ -25,7 +25,7 @@ The code used for the simulations on each paper is linked or available upon requ
 
 ### My papers
 
-1. ![Thumbnail Placeholder](path_to_thumbnail_1.jpg)
+1. ![Thumbnail Placeholder](/images/thumbnails/hinge_spin_polarization.jpg)
    **Hinge Spin Polarization in Magnetic Topological Insulators Revealed by Resistance Switch**
    - Authors: Pablo M. Perez-Piskunow, Stephan Roche
    - Published in: Phys. Rev. Lett. 126, 167701 (2021)
