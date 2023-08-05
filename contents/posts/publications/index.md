@@ -13,7 +13,7 @@ series: "Bio"
 ## Publications
 During my research career, I have authored a few publications. Most of them focus on using optimized large numerical simulations to uncover deep theoretical concepts.
 
-The code used for the simulations on each paper is available upon request.
+The code used for the simulations on each paper is linked or available upon request.
 
 
 ### Links
@@ -29,67 +29,76 @@ The code used for the simulations on each paper is available upon request.
    **Hinge Spin Polarization in Magnetic Topological Insulators Revealed by Resistance Switch**
    - Authors: Pablo M. Perez-Piskunow, Stephan Roche
    - Published in: Phys. Rev. Lett. 126, 167701 (2021)
-   - [arXiv:2101.05293](https://arxiv.org/abs/2101.05293) [[Download PDF]](/pdfs/hinge_spin_polarization.pdf)
-   - **Abstract**: [Abstract placeholder for this paper.]
+   - [arXiv:2101.05293](https://arxiv.org/abs/2101.05293) [[Download PDF]](/pdfs/Perez-Piskunow,%20Roche%20-%202021%20-%20Hinge%20Spin%20Polarization%20in%20Magnetic%20Topological%20Insulators%20Revealed%20by%20Resistance%20Switch.pdf)
+
+
+
+1. ![Thumbnail Placeholder](path_to_thumbnail_1.jpg)
+   **Chiral anomaly trapped in Weyl metals: Nonequilibrium valley polarization at zero magnetic field**
+   - Authors: Pablo M. Perez-Piskunow, Nicandro Bovenzi,
+Anton R. Akhmerov and Maxim Breitkreiz
+   - Published in: SciPost Phys. 11, 046 (2021)
+   - [arXiv:2104.10059](https://arxiv.org/abs/2104.10059) [[Download PDF]](/pdfs/Perez-Piskunow%20et%20al.%20-%202021%20-%20Chiral%20anomaly%20trapped%20in%20Weyl%20metals:%20Nonequilibrium%20valley%20polarization%20at%20zero%20magnetic%20field.pdf)
+
+
 
 2. ![Thumbnail Placeholder](path_to_thumbnail_2.jpg)
    **Hybrid kernel polynomial method**
    - Authors: Muhammad Irfan, Sathish R. Kuppuswamy, Daniel Varjas, Pablo M. Perez-Piskunow, Rafal Skolasinski, Michael Wimmer, Anton R. Akhmerov
-   - [arXiv:1909.09649](https://arxiv.org/abs/1909.09649) [[Download PDF]](/pdfs/hybrid_kernel_polynomial_method.pdf)
-   - **Abstract**: [Abstract placeholder for this paper.]
+   - [arXiv:1909.09649](https://arxiv.org/abs/1909.09649) [[Download PDF]](/pdfs/Irfan%20et%20al.%20-%202019%20-%20Hybrid%20kernel%20polynomial%20method.pdf)
+
 
 3. ![Thumbnail Placeholder](path_to_thumbnail_3.jpg)
    **Computation of topological phase diagram of disordered Pb1−xSnxTe using the kernel polynomial method**
    - Authors: Daniel Varjas, Michel Fruchart, Anton R. Akhmerov, Pablo M. Perez-Piskunow
    - Published in: Phys. Rev. Research 2, 013229 (2020)
-   - [arXiv:1905.02215](https://arxiv.org/abs/1905.02215) [[Download PDF]](/pdfs/computation_topological_phase.pdf)
-   - **Abstract**: [Abstract placeholder for this paper.]
+   - [arXiv:1905.02215](https://arxiv.org/abs/1905.02215) [[Download PDF]](/pdfs/Varjas%20et%20al.%20-%202020%20-%20Computation%20of%20topological%20phase%20diagram%20of%20disordered%20Pb1−xSnxTe%20using%20the%20kernel%20polynomial%20method.pdf) [code](https://doi.org/10.5281/zenodo.2667604)
+
 
 4. ![Thumbnail Placeholder](path_to_thumbnail_4.jpg)
    **Hierarchy of Floquet gaps and edge states for driven honeycomb lattices**
    - Authors: Pablo M. Perez-Piskunow, Luis E. F. Foa Torres, Gonzalo Usaj
    - Published in: Phys. Rev. A 91, 043625
-   - [arXiv:1503.01797](https://arxiv.org/abs/1503.01797) [[Download PDF]](/pdfs/hierarchy_floquet_gaps.pdf)
-   - **Abstract**: [Abstract placeholder for this paper.]
+   - [arXiv:1503.01797](https://arxiv.org/abs/1503.01797) [[Download PDF]](/pdfs/Perez-Piskunow%20et%20al.%20-%202015%20-%20Hierarchy%20of%20Floquet%20gaps%20and%20edge%20states%20for%20driven%20honeycomb%20lattices.pdf)
+
 
 5. ![Thumbnail Placeholder](path_to_thumbnail_5.jpg)
    **Floquet interface states in illuminated three-dimensional topological insulators**
    - Authors: H. L. Calvo, L. E. F. Foa Torres, P. M. Perez-Piskunow, C. A. Balseiro, Gonzalo Usaj
    - Published in: Phys. Rev. B 91, 241404(R) (2015)
-   - [arXiv:1502.04098](https://arxiv.org/abs/1502.04098) [[Download PDF]](/pdfs/floquet_interface_states.pdf)
-   - **Abstract**: [Abstract placeholder for this paper.]
+   - [arXiv:1502.04098](https://arxiv.org/abs/1502.04098) [[Download PDF]](/pdfs/Calvo%20et%20al.%20-%202015%20-%20Floquet%20interface%20states%20in%20illuminated%20three-dimensional%20topological%20insulators.pdf)
+
 
 6. ![Thumbnail Placeholder](path_to_thumbnail_6.jpg)
    **Multiterminal Conductance of a Floquet Topological Insulator**
    - Authors: L. E. F. Foa Torres, P. M. Perez-Piskunow, C. A. Balseiro, G. Usaj
    - Published in: Phys. Rev. Lett. 113, 266801 (2014)
-   - [arXiv:1409.2482](https://arxiv.org/abs/1409.2482) [[Download PDF]](/pdfs/multiterminal_conductance.pdf)
-   - **Abstract**: [Abstract placeholder for this paper.]
+   - [arXiv:1409.2482](https://arxiv.org/abs/1409.2482) [[Download PDF]](/pdfs/Foa-Torres%20et%20al.%20-%202014%20-%20Multiterminal%20Conductance%20of%20a%20Floquet%20Topological%20Insulator.pdf)
+
 
 7. ![Thumbnail Placeholder](path_to_thumbnail_7.jpg)
    **Irradiated graphene as a tunable Floquet topological insulator**
    - Authors: Gonzalo Usaj, P. M. Perez-Piskunow, L. E. F. Foa Torres, C. A. Balseiro
    - Published in: Phys. Rev. B 90, 115423 (2014)
-   - [arXiv:1406.1711](https://arxiv.org/abs/1406.1711) [[Download PDF]](/pdfs/irradiated_graphene.pdf)
-   - **Abstract**: [Abstract placeholder for this paper.]
+   - [arXiv:1406.1711](https://arxiv.org/abs/1406.1711) [[Download PDF]](/pdfs/Usaj%20et%20al.%20-%202014%20-%20Irradiated%20graphene%20as%20a%20tunable%20Floquet%20topological%20insulator.pdf)
+
 
 8. ![Thumbnail Placeholder](path_to_thumbnail_8.jpg)
    **Floquet chiral edge states in graphene**
    - Authors: P. M. Perez-Piskunow, Gonzalo Usaj, C. A. Balseiro, L. E. F. Foa Torres
    - Published in: Phys. Rev. B 89, 121401(R) (2014)
-   - [arXiv:1308.4362](https://arxiv.org/abs/1308.4362) [[Download PDF]](/pdfs/floquet_chiral_edge.pdf)
-   - **Abstract**: [Abstract placeholder for this paper.]
+   - [arXiv:1308.4362](https://arxiv.org/abs/1308.4362) [[Download PDF]](/pdfs/Perez-Piskunow%20et%20al.%20-%202014%20-%20Floquet%20chiral%20edge%20states%20in%20graphene.pdf)
+
 
 9. ![Thumbnail Placeholder](path_to_thumbnail_9.jpg)
    **Non-perturbative laser effects on the electrical properties of graphene nanoribbons**
    - Authors: Hernan L. Calvo, Pablo M. Perez-Piskunow, Horacio M. Pastawski, Stephan Roche, Luis E. F. Foa Torres
    - Published in: J. Phys.: Condens. Matter 25, 144202 (2013)
-   - [arXiv:1301.6629](https://arxiv.org/abs/1301.6629) [[Download PDF]](/pdfs/non_perturbative_laser_effects.pdf)
-   - **Abstract**: [Abstract placeholder for this paper.]
+   - [arXiv:1301.6629](https://arxiv.org/abs/1301.6629) [[Download PDF]](/pdfs/Calvo%20et%20al.%20-%202013%20-%20Non-perturbative%20effects%20of%20laser%20illumination%20on%20the%20electrical%20properties%20of%20graphene%20nanoribbons.pdf)
+
 
 10. ![Thumbnail Placeholder](path_to_thumbnail_10.jpg)
     **Laser-induced effects on the electronic features of graphene nanoribbons**
     - Authors: Hernan L. Calvo, Pablo M. Perez-Piskunow, Stephan Roche, Luis E. F. Foa Torres
     - Published in: Appl. Phys. Lett. 101, 253506 (2012)
-    - [arXiv:1212.0491](https://arxiv.org/abs/1212.0491) [[Download PDF]](/pdfs/laser_induced_effects.pdf)
-    - **Abstract**: [Abstract placeholder for this paper.]
+    - [arXiv:1212.0491](https://arxiv.org/abs/1212.0491) [[Download PDF]](/pdfs/Calvo%20et%20al.%20-%202012%20-%20Laser-induced%20effects%20on%20the%20electronic%20features%20of%20graphene%20nanoribbons.pdf)
