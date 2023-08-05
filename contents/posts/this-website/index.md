@@ -1,13 +1,20 @@
 ---
-title: "🤔 3. Writing Guide"
-description: "How to write and add a post?"
-date: 2021-05-03
-update: 2021-05-03
+title: "This website"
+date: 2023-08-05
+update: 2023-08-05
 tags:
-  - hoodie
-  - writing-guide
-series: "Getting started your blog with gatsby-starter-hoodie"
+  - gatsby
+  - react
+series: "Progressive Web Applications"
 ---
+
+
+This website is based on [gatsby-starter-hoodie](https://github.com/devHudi/gatsby-starter-hoodie) by [Hudi](https://github.com/devHudi).
+
+It is a tech-blog style website, where each page is generated from a markdown file, which supports KaTeX to render math typesetting and code highlighting many programming languages.
+
+Each post can have multiple [tags](/tags), and be part of a [series](/series).
+
 
 ## 1. Add a post
 

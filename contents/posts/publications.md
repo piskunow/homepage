@@ -1,8 +1,8 @@
 ---
 title: "Research publications"
-description: "Publications on international journals."
-date: 2023-08-05
+date: 2021-01-01
 update: 2023-08-05
+# description: "Publications on international journals"
 tags:
   - code
   - publications

@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 const TagListWrapper = styled.div`
   margin-bottom: 16px;
-  word-break: break-all;
+  word-break: normal;
 `
 
 const TagLink = styled.div`

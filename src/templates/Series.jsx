@@ -22,7 +22,7 @@ const Title = styled.h1`
   font-size: 44.8px;
   font-weight: bold;
   color: ${props => props.theme.colors.text};
-  word-break: break-all;
+  word-break: normal;
 `
 
 const Subtitle = styled.h3`

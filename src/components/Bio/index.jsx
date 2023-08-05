@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { useSelector } from 'react-redux';
 
 import {
   FaGithub,
@@ -33,7 +34,7 @@ const Profile = styled.div`
   width: 128px;
   height: 128px;
   border-radius: 999px;
-  background-image: url(${profileImageRoot}/profile.png);
+  background-image: url(${profileImageRoot}/images/profile.jpeg);
   background-size: cover;
   background-position: center;
 `
@@ -71,6 +72,18 @@ const LinksWrapper = styled.div`
   & a:hover svg path {
     fill: ${props => props.theme.colors.text};
   }
+
+  & img {
+    width: 25.6px;
+    height: 25.6px;
+    vertical-align: top; // to align with FontAwesome icons
+    cursor: pointer;
+    opacity: 0.62;
+  }
+
+  & img:hover {
+    opacity: 1.0;
+  }
 `
 
 const Link = ({ link, children }) => {
@@ -83,7 +96,9 @@ const Link = ({ link, children }) => {
 }
 
 const Bio = () => {
-  const { github, kaggle, instagram, facebook, linkedIn, email, etc } = links
+  const theme = useSelector(state => state.theme.theme);
+  console.log(theme);
+  const { github, kaggle, instagram, facebook, linkedIn, email, gumroad, notion } = links
 
   return (
     <BioWrapper id="bio">
@@ -110,9 +125,16 @@ const Bio = () => {
           <Link link={email}>
             <FaEnvelope />
           </Link>
-          <Link link={etc}>
-            <FaLink />
+          <Link link={gumroad}>
+            <img src="https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/618f28a89e94524552a002cb_g-icon.svg" alt="Gumroad"></img>
           </Link>
+          <Link link={notion}>
+          {theme === 'light' ? (
+            <img src="/images/notion-logo-block-mono-black.svg" alt="Notion" />
+          ) : (
+            <img src="/images/notion-logo-block-mono-white.svg" alt="Notion" />
+          )}
+        </Link>
         </LinksWrapper>
       </div>
     </BioWrapper>

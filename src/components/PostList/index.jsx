@@ -8,6 +8,10 @@ import Title from "components/Title"
 import Divider from "components/Divider"
 import TagList from "components/TagList"
 
+const StyledLink = styled(Link)`
+  text-decoration: none;
+`;
+
 const PostListWrapper = styled.div`
   @media (max-width: 768px) {
     padding: 0 10px;
@@ -35,7 +39,7 @@ const Excerpt = styled.p`
   line-height: 1.7;
   font-size: 16px;
   color: ${props => props.theme.colors.secondaryText};
-  word-break: break-all;
+  word-break: normal;
 `
 
 const checkIsScrollAtBottom = () => {
@@ -77,15 +81,17 @@ const PostList = ({ postList }) => {
         return (
           <>
             <PostWrapper>
-              <Title size="bg">
-                <Link to={slug}>{title}</Link>
-              </Title>
-              <Date>{date}</Date>
-              {description ? (
-                <Excerpt>{description}</Excerpt>
-              ) : (
-                <Excerpt>{excerpt}</Excerpt>
-              )}
+              <StyledLink to={slug}>
+                <Title size="bg">
+                  {title}
+                </Title>
+                <Date>{date}</Date>
+                {description ? (
+                  <Excerpt>{description}</Excerpt>
+                ) : (
+                  <Excerpt>{excerpt}</Excerpt>
+                )}
+              </StyledLink>
               <TagList tagList={tags} />
             </PostWrapper>
 

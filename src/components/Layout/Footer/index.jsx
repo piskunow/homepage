@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import { title } from "../../../../blog-config"
+import { author, title } from "../../../../blog-config"
 
 const FooterWrapper = styled.footer`
   margin-top: 32px;
@@ -20,11 +20,10 @@ const FooterWrapper = styled.footer`
 const Footer = () => {
   return (
     <FooterWrapper>
-      © {title}, Built with Gatsby and{" "}
-      <a href="https://github.com/devHudi/gatsby-starter-hoodie" target="blank">
-        gatsby-starter-hoodie
-      </a>{" "}
-      theme.
+      &middot;
+      {` `}
+      {author}
+      {` `}© {new Date().getFullYear()} &middot;
     </FooterWrapper>
   )
 }
