@@ -59,7 +59,7 @@ export default Search
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       nodes {
         excerpt(pruneLength: 200, truncate: true)
         fields {

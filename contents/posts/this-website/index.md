@@ -8,13 +8,11 @@ tags:
 series: "Progressive Web Applications"
 ---
 
-
 This website is based on [gatsby-starter-hoodie](https://github.com/devHudi/gatsby-starter-hoodie) by [Hudi](https://github.com/devHudi).
 
 It is a tech-blog style website, where each page is generated from a markdown file, which supports KaTeX to render math typesetting and code highlighting many programming languages.
 
 Each post can have multiple [tags](/tags), and be part of a [series](/series).
-
 
 ## 1. Add a post
 

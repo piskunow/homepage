@@ -10,7 +10,7 @@ import TagList from "components/TagList"
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-`;
+`
 
 const PostListWrapper = styled.div`
   @media (max-width: 768px) {
@@ -82,9 +82,7 @@ const PostList = ({ postList }) => {
           <>
             <PostWrapper>
               <StyledLink to={slug}>
-                <Title size="bg">
-                  {title}
-                </Title>
+                <Title size="bg">{title}</Title>
                 <Date>{date}</Date>
                 {description ? (
                   <Excerpt>{description}</Excerpt>

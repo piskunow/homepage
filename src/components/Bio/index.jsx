@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { useSelector } from 'react-redux';
+import { useSelector } from "react-redux"
 
 import {
   FaGithub,
@@ -81,7 +81,7 @@ const LinksWrapper = styled.div`
   }
 
   & img:hover {
-    opacity: 1.0;
+    opacity: 1;
   }
 `
 
@@ -95,9 +95,18 @@ const Link = ({ link, children }) => {
 }
 
 const Bio = () => {
-  const theme = useSelector(state => state.theme.theme);
-  console.log(theme);
-  const { github, kaggle, instagram, facebook, linkedIn, email, gumroad, notion } = links
+  const theme = useSelector(state => state.theme.theme)
+  console.log(theme)
+  const {
+    github,
+    kaggle,
+    instagram,
+    facebook,
+    linkedIn,
+    email,
+    gumroad,
+    notion,
+  } = links
 
   return (
     <BioWrapper id="bio">
@@ -125,15 +134,24 @@ const Bio = () => {
             <FaEnvelope />
           </Link>
           <Link link={gumroad}>
-            <img src="https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/618f28a89e94524552a002cb_g-icon.svg" alt="Gumroad"></img>
+            <img
+              src="https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/618f28a89e94524552a002cb_g-icon.svg"
+              alt="Gumroad"
+            ></img>
           </Link>
           <Link link={notion}>
-          {theme === 'light' ? (
-            <img src="/images/notion-logo-block-mono-black.svg" alt="Notion" />
-          ) : (
-            <img src="/images/notion-logo-block-mono-white.svg" alt="Notion" />
-          )}
-        </Link>
+            {theme === "light" ? (
+              <img
+                src="/images/notion-logo-block-mono-black.svg"
+                alt="Notion"
+              />
+            ) : (
+              <img
+                src="/images/notion-logo-block-mono-white.svg"
+                alt="Notion"
+              />
+            )}
+          </Link>
         </LinksWrapper>
       </div>
     </BioWrapper>
