@@ -8,24 +8,27 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const seriesTemplate = require.resolve(`./src/templates/Series.jsx`)
 
   const result = await graphql(`
-  {
-    postsRemark: allMarkdownRemark(sort: {frontmatter: {date: ASC}}, limit: 1000) {
-      nodes {
-        id
-        fields {
-          slug
+    {
+      postsRemark: allMarkdownRemark(
+        sort: { frontmatter: { date: ASC } }
+        limit: 1000
+      ) {
+        nodes {
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            series
+          }
         }
-        frontmatter {
-          series
+      }
+      tagsGroup: allMarkdownRemark(limit: 2000) {
+        group(field: { frontmatter: { tags: SELECT } }) {
+          fieldValue
         }
       }
     }
-    tagsGroup: allMarkdownRemark(limit: 2000) {
-      group(field: {frontmatter: {tags: SELECT}}) {
-        fieldValue
-      }
-    }
-  }
   `)
 
   if (result.errors) {
