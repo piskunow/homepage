@@ -29,7 +29,7 @@ const StyledMarkdown = styled.div`
 
   & p {
     overflow-x: scroll;
-    word-break: break-all;
+    word-break: normal;
 
     ::-webkit-scrollbar {
       display: none;
@@ -152,7 +152,7 @@ const StyledMarkdown = styled.div`
 
   & ul,
   & ol {
-    padding-left: 25px;
+    padding-left: 35px;
   }
 
   & ol {
