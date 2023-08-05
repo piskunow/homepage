@@ -67,7 +67,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    markdownRemark(id: { eq: $id }) {
+    markdownRemark(id: {eq: $id}) {
       id
       excerpt(pruneLength: 200, truncate: true)
       html
@@ -86,8 +86,8 @@ export const pageQuery = graphql`
       }
     }
     seriesList: allMarkdownRemark(
-      sort: { order: ASC, fields: [frontmatter___date] }
-      filter: { frontmatter: { series: { eq: $series } } }
+      sort: {frontmatter: {date: ASC}}
+      filter: {frontmatter: {series: {eq: $series}}}
     ) {
       edges {
         node {
@@ -101,7 +101,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    previous: markdownRemark(id: { eq: $previousPostId }) {
+    previous: markdownRemark(id: {eq: $previousPostId}) {
       fields {
         slug
       }
@@ -109,7 +109,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    next: markdownRemark(id: { eq: $nextPostId }) {
+    next: markdownRemark(id: {eq: $nextPostId}) {
       fields {
         slug
       }
