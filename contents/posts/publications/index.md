@@ -6,7 +6,7 @@ update: 2023-08-06
 tags:
   - code
   - publications
-series: "Research"
+# series: "Research"
 ---
 
 During my research career, I have authored a few publications. Most of them focus on uncovering deep theoretical concepts by using optimized large numerical simulations.

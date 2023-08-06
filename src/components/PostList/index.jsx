@@ -5,7 +5,6 @@ import _ from "lodash"
 import { Link } from "gatsby"
 
 import Title from "components/Title"
-import Divider from "components/Divider"
 import TagList from "components/TagList"
 
 const StyledLink = styled(Link)`
@@ -22,9 +21,20 @@ const PostWrapper = styled.div`
   position: relative;
   top: 0;
   transition: all 0.5s;
+  background-color: ${props =>
+    props.theme.colors.hoveredTagBackground}; // Add this line
+  border-radius: 10px; // Add this line if you want rounded corners
+  padding: 20px; // Add this line to give some space around the content
+  margin-bottom: 16px; // Adjust the margin for smaller screens if needed
+  &:hover {
+    background-color: ${props =>
+      props.theme.colors
+        .background}; // Add this line to change the background color on hover
+  }
 
   @media (max-width: 768px) {
-    padding: 0 5px;
+    padding: 0 10px;
+    margin-bottom: 10px; // Adjust the margin for smaller screens if needed
   }
 `
 
@@ -73,7 +83,7 @@ const PostList = ({ postList }) => {
 
   return (
     <PostListWrapper>
-      {postList.slice(0, postCount).map((post, i) => {
+      {postList.slice(0, postCount).map(post => {
         const { title, description, date, tags } = post.frontmatter
         const { excerpt } = post
         const { slug } = post.fields
@@ -92,10 +102,6 @@ const PostList = ({ postList }) => {
               </StyledLink>
               <TagList tagList={tags} />
             </PostWrapper>
-
-            {postCount - 1 !== i && postList.length - 1 !== i && (
-              <Divider mt="48px" mb="32px" />
-            )}
           </>
         )
       })}

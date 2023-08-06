@@ -42,19 +42,16 @@ const Tag = styled.li`
   }
 `
 
-const SideTagList = ({ tags, postCount }) => {
+const SideTagList = ({ tags }) => {
   return (
     <RelativeWrapper>
       <Wrapper>
         <Title>TAG LIST</Title>
         <ul>
-          <Tag>
-            <Link to="/tags">all ({postCount})</Link>
-          </Tag>
           {_.map(tags, tag => (
             <Tag>
               <Link to={`/tags?q=${tag.fieldValue}`}>
-                {tag.fieldValue} ({tag.totalCount})
+                #{tag.fieldValue} ({tag.totalCount})
               </Link>
             </Tag>
           ))}

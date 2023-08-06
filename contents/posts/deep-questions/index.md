@@ -4,10 +4,11 @@ date: 2021-07-01
 update: 2023-08-06
 tags:
   - LLM
-  - Progressive Web Applications
+  - PWA
   - gatsby
   - react
-series: "Entrepreneurship"
+  - entrepreneur
+# series: "Entrepreneurship"
 ---
 
 ## Side project turn Startup

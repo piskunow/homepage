@@ -32,7 +32,7 @@ const BlogIndex = ({ data }) => {
       <VerticalSpace size={48} />
       <Bio />
       <Divider />
-      <SideTagList tags={tags} postCount={posts.length} />
+      <SideTagList tags={tags} />
       <PostList postList={posts} />
     </Layout>
   )

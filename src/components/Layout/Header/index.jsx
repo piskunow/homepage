@@ -9,9 +9,9 @@ import {
   FaSun,
   FaMoon,
   FaTags,
-  FaRss,
+  // FaRss,
   FaSearch,
-  FaListUl,
+  // FaListUl,
 } from "react-icons/fa"
 
 const HeaderWrapper = styled.header`
@@ -153,12 +153,12 @@ const Header = ({ toggleTheme }) => {
           <Link to="/tags">
             <FaTags />
           </Link>
-          <Link to="/series">
+          {/* <Link to="/series">
             <FaListUl />
           </Link>
           <Link to="/rss.xml">
             <FaRss />
-          </Link>
+          </Link> */}
           <Link to="/search">
             <FaSearch style={{ marginRight: 0 }} />
           </Link>
