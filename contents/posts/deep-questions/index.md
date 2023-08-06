@@ -49,26 +49,25 @@ If they try to access a protected route, like the application itself, they will 
 The landing page has a modal prompting to subscribe that doesn't show for authenticated users.
 
 I learned to use the [Material UI](https://material-ui.com/) design system, and many of its components
-* Theme: Centralized configuration of fonts, colors and sizes.
 
-    I found a font to match the logo
-    ![Deep Questions Font](/images/DQ_name_600.png)
+- Theme: Centralized configuration of fonts, colors and sizes.
 
-    But also designed the logo
-    ![Deep Questions Logo](/images/DQ_192.png)
+  I found a font to match the logo
+  ![Deep Questions Font](/images/DQ_name_600.png)
 
-* Snacks: Alerts that guide the user actions and provide feedback on errors and success.
-* Modals: Subscribe or click-away to discard it.
-* Responsive Design: Grids for adjusting the layout. Drawer auto-hides for small screens, like mobile in portrait position, and some elements of the AppBar move to the Drawer if there is no space.
+  But also designed the logo
+  ![Deep Questions Logo](/images/DQ_192.png)
+
+- Snacks: Alerts that guide the user actions and provide feedback on errors and success.
+- Modals: Subscribe or click-away to discard it.
+- Responsive Design: Grids for adjusting the layout. Drawer auto-hides for small screens, like mobile in portrait position, and some elements of the AppBar move to the Drawer if there is no space.
 
 ![DQ WebApp medium screens](/images/DQ_Questions_md.png)
 ![DQ WebApp small screens](/images/DQ_Questions_sm.png)
 
-
 #### Backend
 
 For the backend, we used [Google Cloud Functions](https://cloud.google.com/functions/) to host a BERT model, fine-tuned to generate questions and summarize long texts. This involved integrating the backend and frontend via APIs, a process that deepened my understanding of serverless architecture and its benefits.
-
 
 ## The Application
 
