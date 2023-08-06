@@ -11,7 +11,7 @@ module.exports = {
     notion: "https://affiliate.notion.so/data-guy",
   },
   utterances: {
-    repo: "piskunow/personal-website",
+    repo: "piskunow/homepage",
     type: "pathname",
   },
 }
