@@ -12,13 +12,13 @@ series: "Entrepreneurship"
 
 ## Side project turn Startup
 
-Two years ago, we embarked with two friends on an exciting journey to turn a side project, Deep Questions, into a startup. Although the startup didn't achieve the success initially envisioned, the experience was filled with invaluable lessons, personal growth, and a wealth of self-taught technical skills.
+Two years ago, we embarked with two friends on an exciting journey to turn a side project, [Deep Questions](https://deep-questions.web.app), into a startup. Although the startup didn't achieve the success initially envisioned, the experience was filled with invaluable lessons, personal growth, and a wealth of self-taught technical skills.
 
 > Checkout some of the [books](/books) that introduced me to the startup world. Specially, 'From zero to one' and 'The Lean Startup'.
 
 ## Yes! Delft - Validation Lab
 
-The journey began at the Yes! Delft Validation Lab, a leading tech incubator in Europe. This 10-week program provided me with the right skills, an extensive toolset, and access to a thriving tech ecosystem to validate the business idea and find the Problem-Solution Fit.
+The journey began at the [Yes! Delft Validation Lab](https://www.yesdelft.com/yes-programs/ai-blockchain-validation-lab/), a leading tech incubator in Europe. This 10-week program provided me with the right skills, an extensive toolset, and access to a thriving tech ecosystem to validate the business idea and find the Problem-Solution Fit.
 
 ### Product validation
 
@@ -32,7 +32,7 @@ The business model was designed around a freemium, subscription-based model for 
 
 ## Language models in production
 
-We used GPT-2 and BERT language models in production. We were granted AWS credit and early access to OpenAI GPT-2, which was the most advanced model at the time, and later on to GPT-3, the base of ChatGPT. This experience allowed me to delve deep into the world of language models and understand their practical applications in a real-world setting.
+We explored using GPT-2, [UniLM](https://github.com/microsoft/unilm) and [BERT](https://huggingface.co/docs/transformers/v4.31.0/en/model_doc/bert#transformers.BertForMultipleChoice) language models in production. We were granted AWS credit and early access to OpenAI GPT-2, which was the most advanced model at the time, and later on to GPT-3, the base of [ChatGPT](https://openai.com/chatgpt). This experience allowed me to delve deep into the world of language models and understand their practical applications in a real-world setting.
 
 ### Serverless progressive web applications
 
@@ -40,7 +40,7 @@ The application was divided into frontend and backend. I self-taught JavaScript,
 
 #### Frontend
 
-For the frontend, I used Firebase, Gatsby, and React. Firebase managed user authentication and the Firestore database, enabling the saving of prompts and generated output. I learned about concepts such as user authentication, private routes, and browser-generated pages. I also benchmarked the app with Lighthouse to ensure it was blazing fast and provided an excellent user experience.
+For the frontend, I used [Firebase](https://firebase.google.com/), [Gatsby](https://www.gatsbyjs.com/), and [React](https://react.dev/). Firebase managed user authentication and the Firestore database, enabling the saving of prompts and generated output. I learned about concepts such as user authentication, private routes, and browser-generated pages. I also benchmarked the app with [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to ensure it was blazing fast and provided an excellent user experience.
 
 #### UI/UX
 
@@ -48,7 +48,7 @@ I learned to adjust the user paths. For example, users can create an account and
 If they try to access a protected route, like the application itself, they will be directed to login and back.
 The landing page has a modal prompting to subscribe that doesn't show for authenticated users.
 
-I learned to use the Material UI design system, and many of its components
+I learned to use the [Material UI](https://material-ui.com/) design system, and many of its components
 * Theme: Centralized configuration of fonts, colors and sizes.
 
     I found a font to match the logo
@@ -67,7 +67,7 @@ I learned to use the Material UI design system, and many of its components
 
 #### Backend
 
-For the backend, I used Google Cloud Functions to host a BERT model, fine-tuned to generate questions and summarize long texts. This involved integrating the backend and frontend via APIs, a process that deepened my understanding of serverless architecture and its benefits.
+For the backend, we used [Google Cloud Functions](https://cloud.google.com/functions/) to host a BERT model, fine-tuned to generate questions and summarize long texts. This involved integrating the backend and frontend via APIs, a process that deepened my understanding of serverless architecture and its benefits.
 
 
 ## The Application
@@ -86,4 +86,4 @@ Throughout this journey, I also delved into the world of decision intelligence. 
 
 Despite the outcome, I am grateful for the experience and the growth it has brought me. I am excited to apply these lessons to my future endeavors.
 
-![Team Photo](/path/to/team-photo.png)
+<!-- ![Team Photo](/path/to/team-photo.png) -->
