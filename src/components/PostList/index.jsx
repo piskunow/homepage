@@ -22,6 +22,12 @@ const PostWrapper = styled.div`
   position: relative;
   top: 0;
   transition: all 0.5s;
+  background-color: ${props => props.theme.colors.hoveredTagBackground}; // Add this line
+  border-radius: 10px; // Add this line if you want rounded corners
+  padding: 20px; // Add this line to give some space around the content
+  &:hover {
+    background-color: ${props => props.theme.colors.background}; // Add this line to change the background color on hover
+  }
 
   @media (max-width: 768px) {
     padding: 0 5px;
@@ -92,10 +98,6 @@ const PostList = ({ postList }) => {
               </StyledLink>
               <TagList tagList={tags} />
             </PostWrapper>
-
-            {postCount - 1 !== i && postList.length - 1 !== i && (
-              <Divider mt="48px" mb="32px" />
-            )}
           </>
         )
       })}
