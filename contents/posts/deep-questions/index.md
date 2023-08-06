@@ -1,5 +1,5 @@
 ---
-title: "Deep Questions: A Journey of Learning, Growth, and Self-Discovery"
+title: "Deep Questions: Growing a side project into a Startup"
 date: 2021-07-01
 update: 2023-08-06
 tags:
@@ -12,7 +12,9 @@ series: "Entrepreneurship"
 
 ## Side project turn Startup
 
-Two years ago, I embarked on an exciting journey to turn a side project, Deep Questions, into a startup. Although the startup didn't achieve the success initially envisioned, the experience was filled with invaluable lessons, personal growth, and a wealth of self-taught technical skills.
+Two years ago, we embarked with two friends on an exciting journey to turn a side project, Deep Questions, into a startup. Although the startup didn't achieve the success initially envisioned, the experience was filled with invaluable lessons, personal growth, and a wealth of self-taught technical skills.
+
+> Checkout some of the [books](/books) that introduced me to the startup world. Specially, 'From zero to one' and 'The Lean Startup'.
 
 ## Yes! Delft - Validation Lab
 
@@ -20,17 +22,17 @@ The journey began at the Yes! Delft Validation Lab, a leading tech incubator in 
 
 ### Product validation
 
-I started by identifying customer personas, conducting interviews, and striving to achieve product-market fit. The target customers were learners and teachers who needed a time-saving learning tool. This process was guided by the principles outlined in "The Mom Test", which emphasizes the importance of understanding customer needs and validating business ideas through customer conversations.
+We started by identifying customer personas, conducting interviews, and striving to achieve product-market fit. The target customers were learners and teachers who needed a time-saving learning tool. This process was guided by the principles outlined in "The Mom Test", which emphasizes the importance of understanding customer needs and validating business ideas through customer conversations.
 
 ### Business model
 
 The business model was designed around a freemium, subscription-based model for learners and teachers. For institutions, a licensing model was offered with a negotiated price, depending on product features, user volume, customer support, and customization of the services.
 
-![Business Model Canvas](/path/to/business-model-canvas.png)
+![Business Model Canvas](/images/DQ_business_model.png)
 
 ## Language models in production
 
-I used GPT-2 and BERT language models in production. I was granted AWS credit and early access to OpenAI GPT-2, which was the most advanced model at the time, and later on to GPT-3, the base of ChatGPT. This experience allowed me to delve deep into the world of language models and understand their practical applications in a real-world setting.
+We used GPT-2 and BERT language models in production. We were granted AWS credit and early access to OpenAI GPT-2, which was the most advanced model at the time, and later on to GPT-3, the base of ChatGPT. This experience allowed me to delve deep into the world of language models and understand their practical applications in a real-world setting.
 
 ### Serverless progressive web applications
 
@@ -40,15 +42,39 @@ The application was divided into frontend and backend. I self-taught JavaScript,
 
 For the frontend, I used Firebase, Gatsby, and React. Firebase managed user authentication and the Firestore database, enabling the saving of prompts and generated output. I learned about concepts such as user authentication, private routes, and browser-generated pages. I also benchmarked the app with Lighthouse to ensure it was blazing fast and provided an excellent user experience.
 
+#### UI/UX
+
+I learned to adjust the user paths. For example, users can create an account and login.
+If they try to access a protected route, like the application itself, they will be directed to login and back.
+The landing page has a modal prompting to subscribe that doesn't show for authenticated users.
+
+I learned to use the Material UI design system, and many of its components
+* Theme: Centralized configuration of fonts, colors and sizes.
+
+    I found a font to match the logo
+    ![Deep Questions Font](/images/DQ_name_600.png)
+
+    But also designed the logo
+    ![Deep Questions Logo](/images/DQ_192.png)
+
+* Snacks: Alerts that guide the user actions and provide feedback on errors and success.
+* Modals: Subscribe or click-away to discard it.
+* Responsive Design: Grids for adjusting the layout. Drawer auto-hides for small screens, like mobile in portrait position, and some elements of the AppBar move to the Drawer if there is no space.
+
+![DQ WebApp medium screens](/images/DQ_Questions_md.png)
+![DQ WebApp small screens](/images/DQ_Questions_sm.png)
+
+
 #### Backend
 
 For the backend, I used Google Cloud Functions to host a BERT model, fine-tuned to generate questions and summarize long texts. This involved integrating the backend and frontend via APIs, a process that deepened my understanding of serverless architecture and its benefits.
 
-![WebApp Screenshot](/path/to/webapp-screenshot.png)
 
 ## The Application
 
 Even though the backend services are no longer maintained, you can still check out the frontend of the Deep Questions application [here](https://deep-questions.web.app). Please note that some functionalities might not work due to the backend services being inactive.
+
+![WebApp Screenshot](/images/DQ_LandingPage.png)
 
 ## Take-aways
 
