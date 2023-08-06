@@ -5,7 +5,8 @@ update: 2023-08-05
 tags:
   - gatsby
   - react
-series: "Progressive Web Applications"
+  - PWA
+# series: "Progressive Web Applications"
 ---
 
 This website is based on [gatsby-starter-hoodie](https://github.com/devHudi/gatsby-starter-hoodie) by [Hudi](https://github.com/devHudi).
