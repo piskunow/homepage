@@ -83,7 +83,7 @@ const PostList = ({ postList }) => {
 
   return (
     <PostListWrapper>
-      {postList.slice(0, postCount).map((post) => {
+      {postList.slice(0, postCount).map(post => {
         const { title, description, date, tags } = post.frontmatter
         const { excerpt } = post
         const { slug } = post.fields
