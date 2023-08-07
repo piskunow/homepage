@@ -29,7 +29,9 @@ We started by identifying customer personas, conducting interviews, and striving
 
 The business model was designed around a freemium, subscription-based model for learners and teachers. For institutions, a licensing model was offered with a negotiated price, depending on product features, user volume, customer support, and customization of the services.
 
-![Business Model Canvas](/images/DQ_business_model.png)
+<div style="max-width:500px; margin: auto">
+    <img src="/images/DQ_business_model.png" alt="Business Model Canvas" />
+</div>
 
 ## Language models in production
 
@@ -54,17 +56,23 @@ I learned to use the [Material UI](https://material-ui.com/) design system, and 
 - Theme: Centralized configuration of fonts, colors and sizes.
 
   I found a font to match the logo
-  ![Deep Questions Font](/images/DQ_name_600.png)
+  <div style="max-width:300px; margin: auto">
+    <img src="/images/DQ_name_600.png"/>
+  </div>
 
   But also designed the logo
-  ![Deep Questions Logo](/images/DQ_192.png)
+  <div style="max-width:150px; margin: auto">
+    <img src="/images/DQ_192.png"/>
+  </div>
 
 - Snacks: Alerts that guide the user actions and provide feedback on errors and success.
 - Modals: Subscribe or click-away to discard it.
 - Responsive Design: Grids for adjusting the layout. Drawer auto-hides for small screens, like mobile in portrait position, and some elements of the AppBar move to the Drawer if there is no space.
 
-![DQ WebApp medium screens](/images/DQ_Questions_md.png)
-![DQ WebApp small screens](/images/DQ_Questions_sm.png)
+  <div style="display: grid; grid-template-columns: 1fr 0.3965fr; gap: 1.1%;  align-items: center;">
+      <img src="/images/DQ_Questions_md.png" alt="DQ WebApp Desktop Size">
+      <img src="/images/DQ_Questions_sm.png" alt="DQ WebApp Mobile Size">
+  </div>
 
 #### Backend
 
