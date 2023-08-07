@@ -120,8 +120,8 @@ module.exports = {
             resolve: "gatsby-remark-external-links",
             options: {
               target: "_blank",
-              rel: "noopener noreferrer"
-            }
+              rel: "noopener noreferrer",
+            },
           },
         ],
       },
