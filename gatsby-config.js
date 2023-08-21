@@ -10,6 +10,13 @@ module.exports = {
     siteUrl,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://piskunow.com`,
+      },
+    },
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-robots-txt`,
     {
@@ -38,7 +45,6 @@ module.exports = {
     },
     "gatsby-plugin-styled-components",
     "gatsby-remark-reading-time",
-    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
