@@ -11,7 +11,7 @@ const SEO = ({ subtitle, description, url }) => {
           : []
       }
       title={subtitle}
-      titleTemplate={overrideTitle ? `%s` : `%s | ${siteTitle}`}
+      titleTemplate={subtitle ? `%s` : `%s | ${title}`}
     >
       <title>{subtitle}</title>
       <meta property="og:url" content={url} />
