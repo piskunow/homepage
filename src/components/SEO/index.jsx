@@ -5,11 +5,7 @@ import { title, siteUrl } from "../../../blog-config"
 const SEO = ({ subtitle, description, url }) => {
   return (
     <Helmet
-      link={
-        url
-          ? [{ rel: 'canonical', key: url, href: url }]
-          : []
-      }
+      link={url ? [{ rel: "canonical", key: url, href: url }] : []}
       title={subtitle}
       titleTemplate={subtitle ? `%s` : `%s | ${title}`}
     >
