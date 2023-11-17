@@ -5,8 +5,7 @@ date: 2023-11-17
 update: 2023-11-17
 tags:
   - python
-  - software development
-  - hypermodern python
+  - code
 # series: Python Package Insights
 ---
 
