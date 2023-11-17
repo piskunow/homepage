@@ -13,20 +13,20 @@ Some of the books that inspired me, and I am still learning from
 
 ### Entrepreneur
 
-- *From zero to one* by Peter Thiel
-- *The lean startup* by Eric Ries
+- **From zero to one** by Peter Thiel
+- **The lean startup** by Eric Ries
 <!-- - The mom test
 - Talking to humans -->
-- *Who* by Geoff Smart and Randy Street
-- *Monetizing Innovation* by Ramanujan Tacke
+- **Who** by Geoff Smart and Randy Street
+- **Monetizing Innovation** by Ramanujan Tacke
 
 ### Decision intelligence
 
-- *Thinking fast and slow* by Daniel Kahneman
-- *Anti-Fragile* by Nassim Nicholas Taleb
+- **Thinking fast and slow** by Daniel Kahneman
+- **Anti-Fragile** by Nassim Nicholas Taleb
 
 ### Creative thought
 
-- *Flatland* by Edwin A. Abbott
-- *Like a thief in broad daylight* by Slavoj Žižek
-- *Six easy pieces* by Richard P. Feynman
+- **Flatland** by Edwin A. Abbott
+- **Like a thief in broad daylight** by Slavoj Žižek
+- **Six easy pieces** by Richard P. Feynman
