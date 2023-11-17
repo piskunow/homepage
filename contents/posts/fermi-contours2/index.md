@@ -1,12 +1,13 @@
 ---
-title: The Pros and Cons of Using Cookiecutter Hypermodern Python in Package Development
+title: Hypermodern Python in Package Development
 description: A candid discussion on the advantages and challenges of using the Cookiecutter Hypermodern Python template, illustrated through the 'Fermi Contours' package.
-date: [Insert Today's Date]
+date: 2023-11-17
+update: 2023-11-17
 tags:
   - python
   - software development
   - hypermodern python
-series: Python Package Insights
+# series: Python Package Insights
 ---
 
 ## Navigating Python Package Development with Cookiecutter Hypermodern Python

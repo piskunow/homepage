@@ -1,12 +1,13 @@
 ---
-title: Streamlining Python Package Development with Cookiecutter Hypermodern Python
+title: Streamlining Python Package Development with Hypermodern Python
 description: Demonstrating the ease of Python package development using the Cookiecutter Hypermodern Python template with the 'Fermi Contours' package.
-date: [Insert Today's Date]
+date: 2023-11-17
+update: 2023-11-17
 tags:
   - python
   - software development
   - hypermodern python
-series: Advanced Python Development
+# series: Advanced Python Development
 ---
 
 ## Streamlining Python Package Development with Cookiecutter Hypermodern Python
