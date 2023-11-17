@@ -1,41 +1,38 @@
 ---
-title: Streamlining Python Package Development with Hypermodern Python
-description: Demonstrating the ease of Python package development using the Cookiecutter Hypermodern Python template with the 'Fermi Contours' package.
+title: Hypermodern Python in Package Development
+description: A candid discussion on the advantages and challenges of using the Cookiecutter Hypermodern Python template, illustrated through the 'Fermi Contours' package.
 date: 2023-11-17
 update: 2023-11-17
 tags:
   - python
   - software development
   - hypermodern python
-# series: Advanced Python Development
+# series: Python Package Insights
 ---
 
-## Streamlining Python Package Development with Cookiecutter Hypermodern Python
+## Deep Dive into Cookiecutter Hypermodern Python with 'Fermi Contours'
 
-Upholding best practices when developing a Python package can be overwhelming, but a template that handles most of the boilerplate code can be a lifesaver. In this blog post, I demonstrate this approach using my package, 'Fermi Contours'.
+Developing 'Fermi Contours' with the [Cookiecutter Hypermodern Python template](https://github.com/cjolowicz/cookiecutter-hypermodern-python) offered insightful experiences in Python package development.
 
-### Automating the Hard Parts
+### Emphasizing the Benefits
 
-The Cookiecutter Hypermodern Python template automates several crucial aspects of Python package development:
+- **Automated Documentation**: The template's integration with ReadTheDocs and nbsphinx for Jupyter Notebook examples streamlined documentation. This made [Fermi Contours documentation](https://fermi-contours.readthedocs.io/en/latest/) more dynamic, interactive, and easier to maintain.
 
-- **Automated Documentation Deployment**: The template automatically deploys well-organized documentation to ReadTheDocs. For Fermi Contours, this means that the documentation, complete with tutorials and examples, is always up-to-date and accessible.
+![ReadTheDocs Page of Fermi Contours](Fermi_Contours_documentation.png)
 
-- **Automated Releases to PyPI**: The template simplifies releasing packages to PyPI. It handles versioning and distribution, allowing developers to focus more on development than on release management.
+- **Seamless PyPI Releases**: Automating releases to [PyPI](https://pypi.org/project/fermi-contours/) meant faster, error-free distribution cycles, significantly reducing the manual effort required for versioning and package uploading.
 
-- **Continuous Integration and Testing**: With integrated GitHub Actions, every commit ensures the quality and stability of the code through automated tests and builds.
+![PyPI Page of Fermi Contours](Fermi_Contours_PyPi.png)
 
-![PyPI Page of Fermi Contours](Fermi_Contours_PyPi)
+### Acknowledging the Challenges
 
-### Rich Documentation and Badges
+- **Learning Curve**: While the template offered a sophisticated suite of tools, it required a steep learning curve, especially for those new to some of the integrated technologies.
+- **Balancing Flexibility and Rigidity**: Adhering to the template's structure was sometimes limiting when unique project needs arose, demanding creative solutions.
 
-Fermi Contours benefits significantly from rich documentation and the inclusion of informative badges. These badges offer quick insights into various aspects of the package, such as test coverage, supported Python versions, license, and more, enhancing transparency and trust.
+### Fermi Contours: A Real-World Application
 
-![ReadTheDocs Page of Fermi Contours](Fermi_Contours_documentation)
+Incorporating these advanced features in 'Fermi Contours', available on [GitHub](https://github.com/piskunow/fermi-contours), showcased how a project can benefit from the template's robust framework, while also highlighting areas where adaptability was key.
 
-### Fermi Contours: A Use Case
+### Concluding Thoughts
 
-Fermi Contours, a Python package for computing contours of custom functions, illustrates the practical application of this template. It showcases how developers can focus on the core functionality of their package, leaving concerns like documentation hosting and release management to the automated processes of the template.
-
-## Conclusion
-
-The Cookiecutter Hypermodern Python template represents a significant leap forward in Python package development. It brings efficiency, consistency, and quality to the process, as evidenced by the development of Fermi Contours.
+The Cookiecutter Hypermodern Python template is a powerful ally in Python development, especially in automating documentation and PyPI releases. However, its complexity and structured approach may require additional effort for customization. It's a tool that offers a strong foundation but also demands a willingness to adapt, learn and overcome.
