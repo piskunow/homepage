@@ -1,5 +1,5 @@
 ---
-title: Building Serverless Web Apps: 'Prove Me Wrong' – Collaborative Blog with Notion-like Blocks
+title: Building Serverless Web Apps - 'Prove Me Wrong' – Collaborative Blog with Notion-like Blocks
 description: Discover how I built 'Prove Me Wrong,' a Notion-inspired serverless web app using Gatsby, Firebase, and EditorJS. Learn about implementation challenges and lessons learned..
 date: 2025-03-09
 update: 2023-06-29
@@ -45,10 +45,6 @@ For my serverless web application [Prove Me Wrong](https://provemewrong.web.app/
 The combination of these technologies enabled me to create a functional serverless application without managing backend infrastructure.
 
 ### Finding the Right Editor Experience
-
-<div style="max-width:500px; margin: auto">
-    <img src="images/EditorJSAPI.png" alt="Block-style editor interface" />
-</div>
 
 The search for the perfect content editor was a journey in itself. After exploring various JavaScript packages and weighing their pros and cons, I eventually settled on EditorJS. Its block-based approach—similar to [Notion](https://www.notion.so/)'s interface—provided the foundation I needed.
 
