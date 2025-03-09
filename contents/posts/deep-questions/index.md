@@ -1,12 +1,13 @@
 ---
 title: "Deep Questions: Growing a side project into a Startup"
 date: 2021-07-01
-update: 2023-08-06
+update: 2025-03-09
 tags:
   - LLM
   - PWA
   - gatsby
   - react
+  - serverless
   - entrepreneur
 # series: "Entrepreneurship"
 ---
