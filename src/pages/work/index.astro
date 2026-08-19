@@ -1,0 +1,148 @@
+---
+import Base from "../../layouts/Base.astro"
+import ProductCard from "../../components/ProductCard.astro"
+import { products, work } from "../../data/site"
+---
+
+<Base
+  title="Work"
+  description="Products and projects by Pablo Piskunow: Vigilia, TowardsGM, NightFlow, plus open-source and past work in scientific computing."
+>
+  <section class="band band--flush">
+    <div class="shell">
+      <h1>Work</h1>
+      <p class="lede prose page-lede">
+        Three products I sell and run, then the open-source and earlier work
+        behind them.
+      </p>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="products-heading">
+    <div class="shell">
+      <h2 class="band-label" id="products-heading">products</h2>
+      <div class="grid-2">
+        {products.map(product => <ProductCard product={product} detailed />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="projects-heading">
+    <div class="shell">
+      <h2 class="band-label" id="projects-heading">projects and open source</h2>
+      <div class="entries">
+        {
+          work.map(item => (
+            <article class="entry">
+              <div class="entry__meta">
+                <p class="entry__years mono">{item.years}</p>
+                <p class="entry__role mono">{item.role}</p>
+              </div>
+              <div class="entry__body">
+                <h3 class="entry__name">{item.name}</h3>
+                <p class="entry__summary">{item.summary}</p>
+                <p class="entry__detail">{item.detail}</p>
+                <ul class="entry__stack">
+                  {item.stack.map(s => (
+                    <li>{s}</li>
+                  ))}
+                </ul>
+                <p class="entry__links mono">
+                  {item.href && <a href={item.href}>Read the write-up</a>}
+                  {item.external && (
+                    <a href={item.external} rel="noopener">
+                      {item.externalLabel ?? item.external}
+                    </a>
+                  )}
+                </p>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page-lede {
+    margin-top: 1.25rem;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+    gap: 1.25rem;
+  }
+
+  .entries {
+    display: grid;
+    gap: 3rem;
+  }
+
+  .entry {
+    display: grid;
+    grid-template-columns: minmax(0, 12rem) minmax(0, 1fr);
+    gap: 0.75rem 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+  }
+
+  @media (max-width: 46rem) {
+    .entry {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .entry__years {
+    color: var(--ink-mute);
+  }
+
+  .entry__role {
+    color: var(--gap);
+    margin-top: 0.2rem;
+  }
+
+  .entry__body {
+    max-width: var(--measure);
+  }
+
+  .entry__name {
+    font-size: var(--step-2);
+  }
+
+  .entry__summary {
+    margin-top: 0.5rem;
+    color: var(--ink-mute);
+  }
+
+  .entry__detail {
+    margin-top: 0.9rem;
+    font-size: var(--step--1);
+    line-height: 1.75;
+  }
+
+  .entry__stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  .entry__stack li {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--ink-mute);
+    border: 1px solid var(--line);
+    padding: 0.15rem 0.5rem;
+  }
+
+  .entry__links {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+</style>

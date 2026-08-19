@@ -1,0 +1,110 @@
+---
+import type { Product } from "../data/site"
+
+interface Props {
+  product: Product
+  detailed?: boolean
+}
+
+const { product, detailed = false } = Astro.props
+---
+
+<article class="card">
+  <h3 class="card__name">
+    <a href={product.url} rel="noopener">{product.name}</a>
+  </h3>
+  <p class="card__domain mono">{product.domain}</p>
+  <p class="card__summary">{product.summary}</p>
+  {detailed && <p class="card__detail">{product.detail}</p>}
+  {
+    detailed && (
+      <ul class="card__stack">
+        {product.stack.map(item => (
+          <li>{item}</li>
+        ))}
+      </ul>
+    )
+  }
+</article>
+
+<style>
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 1.6rem 1.5rem 1.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+    transition:
+      border-color 140ms ease,
+      transform 140ms ease;
+  }
+
+  /* The gap motif again: a plum tick on the top edge of each card. */
+  .card::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 1.5rem;
+    width: 2.2rem;
+    height: 2px;
+    background: var(--gap);
+  }
+
+  .card:hover {
+    border-color: var(--line-strong);
+  }
+
+  .card__name {
+    font-size: var(--step-2);
+  }
+
+  .card__name a {
+    text-decoration: none;
+    color: var(--ink);
+  }
+
+  .card__name a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+
+  .card:hover .card__name a {
+    color: var(--band);
+  }
+
+  .card__domain {
+    color: var(--gap);
+    margin-top: -0.25rem;
+  }
+
+  .card__summary {
+    color: var(--ink-mute);
+    margin-top: 0.35rem;
+  }
+
+  .card__detail {
+    margin-top: 0.4rem;
+    font-size: var(--step--1);
+    line-height: 1.7;
+  }
+
+  .card__stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 0.9rem;
+  }
+
+  .card__stack li {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--ink-mute);
+    border: 1px solid var(--line);
+    padding: 0.15rem 0.5rem;
+  }
+</style>

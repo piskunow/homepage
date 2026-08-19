@@ -1,0 +1,78 @@
+---
+import { site } from "../data/site"
+const year = new Date().getFullYear()
+---
+
+<footer class="footer">
+  <div class="shell footer__inner">
+    <div>
+      <p class="footer__name">{site.name}</p>
+      <p class="footer__mail">
+        <a href={`mailto:${site.email}`}>{site.email}</a>
+      </p>
+    </div>
+
+    <ul class="footer__links">
+      <li><a href={site.links.github} rel="me noopener">GitHub</a></li>
+      <li><a href={site.links.linkedin} rel="me noopener">LinkedIn</a></li>
+      <li><a href={site.links.scholar} rel="noopener">Scholar</a></li>
+      <li><a href="/rss.xml">RSS</a></li>
+    </ul>
+
+    <p class="footer__copy">© {year} {site.name}</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    border-top: 1px solid var(--line);
+    margin-top: var(--band-gap);
+    padding-block: 3rem 3.5rem;
+  }
+
+  .footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 3rem;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  .footer__name {
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+  }
+
+  .footer__mail {
+    margin-top: 0.3rem;
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+  }
+
+  .footer__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    list-style: none;
+    padding: 0;
+    font-size: var(--step--1);
+  }
+
+  .footer__links a {
+    color: var(--ink-mute);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line-strong);
+    padding-bottom: 1px;
+  }
+
+  .footer__links a:hover {
+    color: var(--ink);
+    border-bottom-color: var(--gap);
+  }
+
+  .footer__copy {
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    color: var(--ink-mute);
+  }
+</style>
