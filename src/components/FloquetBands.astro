@@ -1,0 +1,139 @@
+---
+import { floquetFigure } from "../lib/floquet"
+
+interface Props {
+  caption?: boolean
+  height?: number
+}
+
+const { caption = true, height = 300 } = Astro.props
+const fig = floquetFigure({ height })
+---
+
+<figure class="floquet">
+  <svg
+    viewBox={`0 0 ${fig.width} ${fig.height}`}
+    preserveAspectRatio="none"
+    class="floquet__svg"
+    role="img"
+    aria-labelledby="floquet-title"
+  >
+    <title id="floquet-title">
+      Band structure of a periodically driven lattice, showing photon replica
+      bands and the gaps that open where they meet.
+    </title>
+
+    <line
+      x1="0"
+      y1={fig.height / 2}
+      x2={fig.width}
+      y2={fig.height / 2}
+      class="floquet__axis"></line>
+
+    {
+      fig.bands.map((band, i) => (
+        <path
+          d={band.d}
+          pathLength="1"
+          class="floquet__band"
+          style={`--i:${i}`}
+        />
+      ))
+    }
+
+    {
+      fig.gaps.map(gap => (
+        <circle cx={gap.x} cy={gap.y} r={gap.size} class="floquet__gap" />
+      ))
+    }
+  </svg>
+
+  {
+    caption && (
+      <figcaption class="floquet__caption">
+        <span class="floquet__caption-key">Fig.</span> Quasi-energy bands of a
+        driven honeycomb lattice. The drive copies each band at multiples of its
+        frequency; where two copies meet they repel instead of crossing. Larger
+        markers are one-photon gaps, smaller ones two-photon. Computed at build
+        time from the model in{" "}
+        <a href="/publications/">Phys. Rev. A 91, 043625</a>.
+      </figcaption>
+    )
+  }
+</figure>
+
+<style>
+  .floquet {
+    margin: 0;
+  }
+
+  .floquet__svg {
+    width: 100%;
+    height: clamp(150px, 26vw, 300px);
+    overflow: visible;
+  }
+
+  .floquet__axis {
+    stroke: var(--line);
+    stroke-width: 1;
+    stroke-dasharray: 2 5;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .floquet__band {
+    fill: none;
+    stroke: var(--band);
+    stroke-width: 1.25;
+    stroke-linecap: round;
+    vector-effect: non-scaling-stroke;
+    opacity: 0.85;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: trace 1.5s cubic-bezier(0.4, 0, 0.15, 1) forwards;
+    animation-delay: calc(var(--i) * 90ms + 150ms);
+  }
+
+  .floquet__gap {
+    fill: var(--gap);
+    opacity: 0;
+    animation: settle 500ms ease forwards;
+    animation-delay: 1.4s;
+  }
+
+  @keyframes trace {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes settle {
+    to {
+      opacity: 0.9;
+    }
+  }
+
+  .floquet__caption {
+    margin-top: 1.4rem;
+    max-width: 58ch;
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    line-height: 1.6;
+    color: var(--ink-mute);
+  }
+
+  .floquet__caption-key {
+    color: var(--gap);
+    font-weight: 500;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .floquet__band {
+      stroke-dashoffset: 0;
+      animation: none;
+    }
+    .floquet__gap {
+      opacity: 0.9;
+      animation: none;
+    }
+  }
+</style>

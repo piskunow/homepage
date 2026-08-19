@@ -1,5 +1,6 @@
-.cache
-.github
-package.json
-package-lock.json
+dist
+.astro
+node_modules
 public
+package-lock.json
+src/content/posts

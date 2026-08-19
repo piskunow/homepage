@@ -1,0 +1,130 @@
+---
+import { getCollection } from "astro:content"
+import Base from "../../layouts/Base.astro"
+
+const posts = (await getCollection("posts")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+)
+
+const dateFmt = new Intl.DateTimeFormat("en-GB", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+})
+---
+
+<Base
+  title="Writing"
+  description="Notes on building software products, Python packaging, serverless web apps and computational physics, by Pablo Piskunow."
+>
+  <section class="band band--flush">
+    <div class="shell">
+      <h1>Writing</h1>
+      <p class="lede prose page-lede">
+        Occasional notes on things I have built and what they cost to build.
+      </p>
+
+      <ul class="posts">
+        {
+          posts.map(post => (
+            <li class="post">
+              <div class="post__head">
+                <h2 class="post__title">
+                  <a href={`/${post.id}/`}>{post.data.title}</a>
+                </h2>
+                <time
+                  class="post__date mono"
+                  datetime={post.data.date.toISOString()}
+                >
+                  {dateFmt.format(post.data.date)}
+                </time>
+              </div>
+              {post.data.description && (
+                <p class="post__desc">{post.data.description}</p>
+              )}
+              {post.data.tags.length > 0 && (
+                <ul class="post__tags">
+                  {post.data.tags.map(tag => (
+                    <li>{tag}</li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page-lede {
+    margin-top: 1.25rem;
+  }
+
+  .posts {
+    list-style: none;
+    padding: 0;
+    margin-top: 3rem;
+    max-width: var(--measure);
+  }
+
+  .post {
+    padding-block: 1.6rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .post:last-child {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .post__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.35rem 1.5rem;
+  }
+
+  .post__title {
+    font-size: var(--step-2);
+  }
+
+  .post__title a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .post__title a:hover {
+    color: var(--band);
+  }
+
+  .post__date {
+    color: var(--ink-mute);
+    white-space: nowrap;
+  }
+
+  .post__desc {
+    margin-top: 0.6rem;
+    color: var(--ink-mute);
+    font-size: var(--step--1);
+    line-height: 1.7;
+  }
+
+  .post__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 0.9rem;
+  }
+
+  .post__tags li {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--ink-mute);
+    border: 1px solid var(--line);
+    padding: 0.15rem 0.5rem;
+  }
+</style>

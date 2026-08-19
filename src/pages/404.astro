@@ -1,0 +1,46 @@
+---
+import Base from "../layouts/Base.astro"
+---
+
+<Base
+  title="Page not found"
+  description="That page does not exist on piskunow.com."
+>
+  <section class="band band--flush notfound">
+    <div class="shell">
+      <p class="notfound__code mono">404</p>
+      <h1>No state at this energy</h1>
+      <p class="lede prose notfound__lede">
+        That page does not exist. It may have moved when the site was rebuilt.
+      </p>
+      <p class="mono notfound__links">
+        <a href="/">Home</a>
+        <a href="/work/">Work</a>
+        <a href="/writing/">Writing</a>
+        <a href="/contact/">Contact</a>
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .notfound {
+    padding-block: clamp(4rem, 12vw, 8rem);
+  }
+
+  .notfound__code {
+    color: var(--gap);
+    margin-bottom: 1rem;
+  }
+
+  .notfound__lede {
+    margin-top: 1.25rem;
+  }
+
+  .notfound__links {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+</style>

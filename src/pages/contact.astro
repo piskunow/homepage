@@ -1,0 +1,153 @@
+---
+import Base from "../layouts/Base.astro"
+import { site } from "../data/site"
+---
+
+<Base
+  title="Contact"
+  description="Get in touch with Pablo Piskunow — pablo@piskunow.com — and business identification details for piskunow.com."
+>
+  <section class="band band--flush">
+    <div class="shell">
+      <h1>Contact</h1>
+      <p class="lede prose page-lede">
+        Email is the fastest way to reach me. I read everything and reply to
+        anything that is not a template.
+      </p>
+
+      <ul class="channels">
+        <li>
+          <span class="channels__key mono">Email</span>
+          <a href={`mailto:${site.email}`}>{site.email}</a>
+        </li>
+        <li>
+          <span class="channels__key mono">GitHub</span>
+          <a href={site.links.github} rel="me noopener">github.com/piskunow</a>
+        </li>
+        <li>
+          <span class="channels__key mono">LinkedIn</span>
+          <a href={site.links.linkedin} rel="me noopener"
+            >linkedin.com/in/piskunow</a
+          >
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="identity-heading">
+    <div class="shell">
+      <h2 class="band-label" id="identity-heading">business identification</h2>
+
+      <div class="identity prose">
+        <p class="identity__status mono">Registration in progress</p>
+        <p>
+          This site is operated by Pablo Piskunow. Spanish law (Ley 34/2002,
+          LSSI-CE) requires a site carrying out economic activity to publish the
+          operator's identification details. Registration as autónomo is
+          underway and the details below will be completed as soon as it is
+          issued.
+        </p>
+        <dl class="identity__fields">
+          <div>
+            <dt>Legal name</dt>
+            <dd class="pending">Pending registration</dd>
+          </div>
+          <div>
+            <dt>Trade name</dt>
+            <dd>Piskunow</dd>
+          </div>
+          <div>
+            <dt>Tax identification (NIF)</dt>
+            <dd class="pending">Pending registration</dd>
+          </div>
+          <div>
+            <dt>Registered address</dt>
+            <dd class="pending">Pending registration</dd>
+          </div>
+          <div>
+            <dt>Contact</dt>
+            <dd><a href={`mailto:${site.email}`}>{site.email}</a></dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page-lede {
+    margin-top: 1.25rem;
+  }
+
+  .channels {
+    list-style: none;
+    padding: 0;
+    margin-top: 2.5rem;
+    max-width: var(--measure);
+  }
+
+  .channels li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.35rem 1.5rem;
+    padding-block: 0.9rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .channels li:last-child {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .channels__key {
+    flex: none;
+    width: 6rem;
+    color: var(--ink-mute);
+  }
+
+  .identity {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 1.75rem 1.6rem;
+    max-width: var(--measure);
+  }
+
+  .identity__status {
+    display: inline-block;
+    color: var(--gap);
+    border: 1px solid color-mix(in srgb, var(--gap) 35%, transparent);
+    padding: 0.15rem 0.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .identity__fields {
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 0;
+  }
+
+  .identity__fields > div {
+    display: grid;
+    grid-template-columns: minmax(0, 12rem) minmax(0, 1fr);
+    gap: 0.25rem 1.5rem;
+    padding-block: 0.8rem;
+    border-top: 1px solid var(--line);
+  }
+
+  @media (max-width: 34rem) {
+    .identity__fields > div {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .identity__fields dt {
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+    color: var(--ink-mute);
+  }
+
+  .pending {
+    color: var(--gap);
+    font-style: italic;
+  }
+</style>

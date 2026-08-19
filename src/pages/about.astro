@@ -1,0 +1,190 @@
+---
+import { Image } from "astro:assets"
+import Base from "../layouts/Base.astro"
+import portrait from "../assets/portrait.jpg"
+import { site, experience, research } from "../data/site"
+---
+
+<Base
+  title="About"
+  description="Pablo Piskunow: physicist turned software engineer. Ten papers in condensed matter theory, then a decade building data and machine learning systems, now building products."
+>
+  <section class="band band--flush">
+    <div class="shell about__head">
+      <div>
+        <h1>About</h1>
+        <div class="prose about__bio">
+          <p>
+            I am Pablo Piskunow. I trained as a theoretical physicist and spent
+            about a decade doing numerical work on quantum transport, then moved
+            into industry and have been building data and machine learning
+            systems since.
+          </p>
+          <p>
+            What carried over from research is the habit of building the tool
+            when the tool does not exist. Most of my published work rests on
+            simulations I had to write first, and that is still how I approach
+            products.
+          </p>
+          <p>
+            I work from Barcelona. The best way to reach me is <a
+              href={`mailto:${site.email}`}>{site.email}</a
+            >.
+          </p>
+        </div>
+      </div>
+
+      <Image
+        src={portrait}
+        alt="Pablo Piskunow"
+        class="about__portrait"
+        width={320}
+        height={320}
+        quality={82}
+      />
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="now-heading">
+    <div class="shell">
+      <h2 class="band-label" id="now-heading">experience</h2>
+      <ul class="roles">
+        {
+          experience.map(role => (
+            <li class="role">
+              <p class="role__org">{role.org}</p>
+              <div>
+                <p class="role__title">{role.title}</p>
+                {role.note && <p class="role__note">{role.note}</p>}
+              </div>
+              {role.years && <p class="role__years mono">{role.years}</p>}
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="research-heading">
+    <div class="shell">
+      <h2 class="band-label" id="research-heading">research</h2>
+      <ul class="roles">
+        {
+          research.map(role => (
+            <li class="role">
+              <p class="role__org">{role.org}</p>
+              <div>
+                <p class="role__title">{role.title}</p>
+                {role.note && <p class="role__note">{role.note}</p>}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+
+      <div class="prose research__note">
+        <p>
+          Ten papers in peer-reviewed journals, mostly on Floquet topological
+          phases and on numerical methods for large disordered systems. The full
+          list, with PDFs and links to the simulation code, is on the <a
+            href="/publications/">publications page</a
+          >.
+        </p>
+        <p class="mono research__links">
+          <a href={site.links.scholar} rel="noopener">Google Scholar</a>
+          <a href={site.links.orcid} rel="noopener">ORCID</a>
+          <a href="https://arxiv.org/a/perezpiskunow_p_1" rel="noopener"
+            >arXiv</a
+          >
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .about__head {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: start;
+    justify-content: space-between;
+    gap: 2rem 3rem;
+  }
+
+  .about__head > div {
+    flex: 1 1 24rem;
+  }
+
+  .about__bio {
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 1.1rem;
+  }
+
+  .about__portrait {
+    flex: none;
+    width: clamp(128px, 22vw, 190px);
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 1px solid var(--line-strong);
+    filter: grayscale(1) contrast(1.04);
+  }
+
+  .roles {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 0;
+  }
+
+  .role {
+    display: grid;
+    grid-template-columns: minmax(0, 12rem) minmax(0, 1fr) auto;
+    gap: 0.35rem 2.5rem;
+    align-items: baseline;
+    padding-block: 1.15rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .role:last-child {
+    border-bottom: 1px solid var(--line);
+  }
+
+  @media (max-width: 46rem) {
+    .role {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .role__org {
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+  }
+
+  .role__title {
+    color: var(--ink);
+  }
+
+  .role__note {
+    margin-top: 0.2rem;
+    font-size: var(--step--1);
+    color: var(--ink-mute);
+  }
+
+  .role__years {
+    color: var(--gap);
+  }
+
+  .research__note {
+    margin-top: 2.25rem;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .research__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+</style>
