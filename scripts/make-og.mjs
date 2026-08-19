@@ -3,8 +3,6 @@
  * so the social card and the page share one visual. Run: npm run og
  */
 import sharp from "sharp"
-import { readFileSync, writeFileSync } from "node:fs"
-import { execSync } from "node:child_process"
 
 const W = 1200
 const H = 630

@@ -14,7 +14,7 @@ tags:
 ## Building Serverless Web Apps: 'Prove Me Wrong' – Collaborative Blog with Notion-like Blocks
 
 <div style="max-width:500px; margin: auto">
-    <img loading="lazy" decoding="async" src="/images/EditorJSAPI.png" alt="Block-style editor interface" />
+    <img loading="lazy" decoding="async" src="/images/EditorJSAPI.png" width="782" height="498" alt="Block-style editor interface" />
 </div>
 
 ### Why I Built "Prove Me Wrong"
@@ -50,7 +50,7 @@ The search for the perfect content editor was a journey in itself. After explori
 
 
 <div style="max-width:500px; margin: auto">
-    <img loading="lazy" decoding="async" src="/images/editorjs.jpg" alt="Block-style editor interface" />
+    <img loading="lazy" decoding="async" src="/images/editorjs.jpg" width="1368" height="1418" alt="Block-style editor interface" />
 </div>
 
 *EditorJS allows for versatile content blocks similar to Notion*
@@ -98,7 +98,7 @@ const editorConfig = {
 ```
 
 <div style="max-width:500px; margin: auto">
-    <img loading="lazy" decoding="async" src="/images/annotated-paragraph.png" alt="Block-style editor interface" />
+    <img loading="lazy" decoding="async" src="/images/annotated-paragraph.png" width="993" height="288" alt="Block-style editor interface" />
 </div>
 
 *Example of the custom class AnnotatedParagraph, linking blocks to comments*
@@ -119,7 +119,7 @@ Beyond the core editing functionality, I focused on crafting a seamless user exp
 The main page showcases trending posts (currently populated with test content), providing a discovery mechanism for users to explore ideas.
 
 <div style="max-width:500px; margin: auto">
-    <img loading="lazy" decoding="async" src="/images/prove-me-wrong-dashboard.png" alt="Block-style editor interface" />
+    <img loading="lazy" decoding="async" src="/images/prove-me-wrong-dashboard.png" width="927" height="880" alt="Block-style editor interface" />
 </div>
 
 *The dashboard provides quick access to the user's posts and engagement metrics*
