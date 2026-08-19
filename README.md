@@ -22,6 +22,18 @@ JavaScript.
 | `npm run check:prettier` | Formatting check (CI runs this)  |
 | `npm run og`             | Regenerate `public/og-image.png` |
 
+### Gotcha
+
+Astro's content layer caches rendered markdown in `node_modules/.astro/data-store.json`.
+Changing a remark/rehype plugin will appear to do nothing locally until that
+cache is cleared:
+
+```sh
+rm -rf node_modules/.astro .astro dist && npm run build
+```
+
+CI is a fresh checkout, so it never sees a stale cache.
+
 ## Deployment
 
 Pushing to `main` deploys to production. Opening a pull request deploys a

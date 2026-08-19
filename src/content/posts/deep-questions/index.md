@@ -31,7 +31,7 @@ We started by identifying customer personas, conducting interviews, and striving
 The business model was designed around a freemium, subscription-based model for learners and teachers. For institutions, a licensing model was offered with a negotiated price, depending on product features, user volume, customer support, and customization of the services.
 
 <div style="max-width:500px; margin: auto">
-    <img loading="lazy" decoding="async" src="/images/DQ_business_model.png" alt="Business Model Canvas" />
+    <img loading="lazy" decoding="async" src="/images/DQ_business_model.png" width="1051" height="736" alt="Business Model Canvas" />
 </div>
 
 ## Language models in production
@@ -58,12 +58,12 @@ I learned to use the [Material UI](https://material-ui.com/) design system, and 
 
   I found a font to match the logo
   <div style="max-width:300px; margin: auto">
-    <img loading="lazy" decoding="async" src="/images/DQ_name_600.png" alt="Deep Questions wordmark" />
+    <img loading="lazy" decoding="async" src="/images/DQ_name_600.png" width="710" height="89" alt="Deep Questions wordmark" />
   </div>
 
   But also designed the logo
   <div style="max-width:150px; margin: auto">
-    <img loading="lazy" decoding="async" src="/images/DQ_192.png" alt="Deep Questions app icon" />
+    <img loading="lazy" decoding="async" src="/images/DQ_192.png" width="192" height="192" alt="Deep Questions app icon" />
   </div>
 
 - Snacks: Alerts that guide the user actions and provide feedback on errors and success.
@@ -71,8 +71,8 @@ I learned to use the [Material UI](https://material-ui.com/) design system, and 
 - Responsive Design: Grids for adjusting the layout. Drawer auto-hides for small screens, like mobile in portrait position, and some elements of the AppBar move to the Drawer if there is no space.
 
   <div style="display: grid; grid-template-columns: 1fr 0.3965fr; gap: 1.1%;  align-items: center;">
-      <img loading="lazy" decoding="async" src="/images/DQ_Questions_md.png" alt="DQ WebApp Desktop Size">
-      <img loading="lazy" decoding="async" src="/images/DQ_Questions_sm.png" alt="DQ WebApp Mobile Size">
+      <img loading="lazy" decoding="async" src="/images/DQ_Questions_md.png" width="1185" height="874" alt="DQ WebApp Desktop Size">
+      <img loading="lazy" decoding="async" src="/images/DQ_Questions_sm.png" width="498" height="922" alt="DQ WebApp Mobile Size">
   </div>
 
 #### Backend
