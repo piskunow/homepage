@@ -20,6 +20,8 @@ export type Product = {
   summary: string
   detail: string
   stack: string[]
+  /** The store listing, when the product also ships as an Android app. */
+  googlePlay?: string
 }
 
 export const products: Product[] = [
@@ -42,6 +44,8 @@ export const products: Product[] = [
     detail:
       "TowardsGM reads your game history from Lichess and Chess.com, finds where your openings actually fall apart, and builds a study path from those positions rather than from a generic repertoire. Progress is tracked per position, so review time goes where the losses are.",
     stack: ["Vite", "Firebase", "Firestore", "Playwright"],
+    googlePlay:
+      "https://play.google.com/store/apps/details?id=com.towardsgm.app&referrer=utm_source%3Dpiskunow.com%26utm_medium%3Dportfolio",
   },
   {
     name: "NightFlow",
