@@ -25,6 +25,20 @@ const { product, detailed = false } = Astro.props
       </ul>
     )
   }
+  {
+    product.googlePlay && (
+      <a class="card__store" href={product.googlePlay} rel="noopener">
+        <img
+          src="/images/google-play-badge.png"
+          alt="Get it on Google Play"
+          width="134"
+          height="40"
+          loading="lazy"
+          decoding="async"
+        />
+      </a>
+    )
+  }
 </article>
 
 <style>
@@ -89,6 +103,22 @@ const { product, detailed = false } = Astro.props
     margin-top: 0.4rem;
     font-size: var(--step--1);
     line-height: 1.7;
+  }
+
+  /* Sits above the name link's card-wide overlay, so the badge goes to the
+     store listing and the rest of the card still goes to the product. */
+  .card__store {
+    position: relative;
+    z-index: 1;
+    align-self: flex-start;
+    margin-top: auto;
+    padding-top: 0.9rem;
+  }
+
+  .card__store img {
+    display: block;
+    height: 40px;
+    width: auto;
   }
 
   .card__stack {
